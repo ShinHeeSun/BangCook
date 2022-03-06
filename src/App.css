@@ -1,0 +1,97 @@
+header {
+  max-width: 1520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header > div > img {
+  margin-top: 25px;
+}
+
+.Navbar {
+  max-width: 1520px;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar > ul {
+  display: flex;
+  padding-left: 0;
+}
+.Navbar > ul > li {
+  font-size: 20px;
+  margin: 0px 42px 0px 42px;
+  padding: 3px;
+  cursor: pointer;
+}
+.Navbar > ul > li > a {
+  padding: 7px;
+}
+.Search {
+  display: inline-flex;
+  align-items: center;
+}
+.searchbar {
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid#9c9998;
+}
+.search {
+  height: 25px;
+}
+.Navbar > ul > li > a:hover {
+  border-bottom: 2px solid #ff6e20;
+  font-weight: bold;
+}
+
+.Navbar > ul > span :hover .faAlignJustify {
+  border-bottom: 0px;
+}
+.zkxprhfl {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+.KategorieMenu {
+  display: flex;
+  padding-left: 0px;
+}
+.KategorieMenu > li {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(26, 9, 9);
+  border-radius: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.cothapsb {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.cothapsb1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+  .Navbar {
+    display: block;
+    flex-direction: column;
+  }
+  .Navbar > ul > li {
+    margin-bottom: 8px;
+  }
+  .Navbar > ul {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .KategorieMenu {
+    margin-top: 20px;
+  }
+}
