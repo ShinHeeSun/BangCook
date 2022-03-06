@@ -2,9 +2,7 @@ import React from "react";
 import logo from "../img/logo.png"
 import { faMagnifyingGlass, faAlignJustify } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    Link, Route
-  } from "react-router-dom";
+
 
 import "../App.css"
 
@@ -16,11 +14,11 @@ function Header () {
         
        <header>
            <div>
-               <img src={ logo } />
+               <img src={ logo } alt=""/>
            </div>
            <div className="Navbar">
                <ul>
-            <li><a to="/"><FontAwesomeIcon icon={faAlignJustify}
+            <li><a href="/"><FontAwesomeIcon icon={faAlignJustify}
                className="faAlignJustify"/>
                   전체 카테고리 
                     </a></li>

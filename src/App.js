@@ -4,9 +4,7 @@ import Coth from "./Components/Coth"
 import Coth1 from "./Components/Coth1"
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Routes,
   Link,
 } from "react-router-dom";
 function App() {
@@ -15,7 +13,6 @@ function App() {
     return(
       
          <Router>
-           <h1></h1>
       <div className="App">
       <Header />
   <div className="zkxprhfl">

@@ -4,8 +4,14 @@ import '../App.css'
 
 function coth () {
     return(
-        <div>
+        <div className="coth">
         <div className="cothapsb">
+            </div>
+            <div className="cothapsb">
+            </div>
+            <div className="cothapsb">
+            </div>
+            <div className="cothapsb">
             </div>
             <div className="cothapsb">
             </div>
