@@ -15,22 +15,104 @@ header > div > img {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .Navbar > ul {
   display: flex;
   padding-left: 0;
+  margin-bottom: 0px;
+  z-index: 1;
+  
 }
 .Navbar > ul > li {
   font-size: 20px;
   margin: 0px 42px 0px 42px;
-  padding: 3px;
+  
   cursor: pointer;
- 
+  position: relative;
+  z-index: 9999;
 }
 .Navbar > ul > li > a {
   padding: 7px;
   color: black;
 }
+.NavMenu {
+  width: 944.41px;
+  height: 300px;
+  position: absolute;
+  display: none;
+  border: 1px solid black;
+  z-index: 1;
+  top: 120px;
+  background-color: white;
+}
+.NavMenu1{
+  width: 158.53px;
+  font-size: 20px;
+  margin: 0px 40px 0px 40px;
+  padding: 6px;
+  display: inline-block;
+  color: red;
+  float: left;
+}
+.NavMenu11{
+  width: 158.53px;
+  font-size: 20px;
+  margin: 0px 40px 0px 40px;
+  padding: 6px;
+  display: inline-block;
+  color: black;
+  left: 0;
+  position: absolute;
+}
+.NavMenu2{
+  width: 74px;
+  font-size: 20px;
+  margin: 0px 43px 0px 43px;
+  padding: 5px;
+  display: inline-block;
+  color: red;
+  float: left;
+}
+.NavMenu22{
+  width: 74px;
+  font-size: 20px;
+  margin: 0px 43px 0px 43px;
+  padding: 5px;
+  display: inline-block;
+  color: black;
+  position: absolute;
+  left: 238.53px;
+}
+.NavMenu3{
+  width: 74px;
+  font-size: 20px;
+  margin: 0px 43px 0px 43px;
+  padding: 5px;
+  display: inline-block;
+  color: red;
+  float: left;
+}
+.NavMenu4{
+  width: 101.3px;
+  font-size: 20px;
+  margin: 0px 42px 0px 42px;
+  padding: 5px;
+  display: inline-block;
+  color: red;
+  float: left;
+}
+.NavMenu5{
+  width: 110px;
+  font-size: 20px;
+  margin: 0px 42px 0px 42px;
+  padding: 5px;
+  display: inline-block;
+  color: red;
+  float: left;
+  white-space: nowrap;
+}
+
 .Search {
   display: inline-flex;
   align-items: center;
@@ -41,7 +123,6 @@ header > div > img {
   height: 40px;
   border-radius: 15px;
   border: 2px solid#9c9998;
-  
 }
 .search {
   height: 25px;
@@ -50,6 +131,11 @@ header > div > img {
   border-bottom: 2px solid #ff6e20;
   font-weight: bold;
 }
+.Navbar > ul:hover .NavMenu{
+  display: block;
+}
+
+
 
 .Navbar > ul > span :hover .faAlignJustify {
   border-bottom: 0px;
@@ -60,17 +146,27 @@ header > div > img {
   padding-left: 0px;
 }
 .KategorieMenu {
+  width: 1000px;
   display: flex;
+  flex-wrap:wrap;
   padding-left: 0px;
-  margin-top: 50px;
+  margin-bottom: 0px;
+
   
 }
 .KategorieMenu > li {
-  width: 100px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.KategorieMenu > li> a{
+  padding-left: 40px;
+  padding-right: 40px;
+  white-space: nowrap;
+  width: 130px;
   height: 30px;
   border: 1px solid rgb(26, 9, 9);
   border-radius: 15px;
-  margin-left: 20px;
+  
   cursor: pointer;
 }
 .coth {
@@ -78,25 +174,47 @@ header > div > img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
+}
+.cothapsb > img{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .cothapsb {
+  position: relative;
   margin: 0 15px;
   width: 300px;
-  height: 400px;
+  height: 350px;
   border: 1px solid black;
   margin-top: 50px;
+  text-align: end;
+  line-height: 550px;
 }
 .coth1 {
+  max-width: 1520px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .cothapsb1 {
+  position: relative;
   margin: 0 15px;
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 350px;
   border: 1px solid red;
   margin-top: 50px;
+  text-align: end;
+  line-height: 550px;
+}
+.cothapsb1 > img{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 @media screen and (max-width: 950px) {
